@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "digital";
+  src: url(../djb-get-digital/DJB\ Get\ Digital.ttf);
+}
+
+/* 共通 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+/* 背景動画 */
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* 時間選択 */
+
+.container {
+  display: flex;
+}
+
+.time-select {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.time-select button {
+  width: 80%;
+  height: 15%;
+  margin: 0 auto;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.time-select button:hover {
+  color: black;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+
+/* 画面右側　アイコンなど */
+
+.player-select {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.player-select__top {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+}
+.player-select__video {
+  width: 15vh;
+}
+
+.player-select__icon {
+  width: 15vh;
+}
+
+/* タイマーのアイコン */
+
+.player-select__circle {
+  position: relative;
+  height: 40vh;
+  margin-top: 50px;
+}
+
+#playerSelectCircleImg {
+  width: 20vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.player-select__circle__svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.player-select__circle__svg svg {
+  width: 40vh;
+  height: 40vh;
+  transform: rotate(90deg) scale(-1, 1);
+}
+
+/* 秒数 */
+
+.player-select__timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  height: 10vh;
+}
+
+.player-select__timer p {
+  font-family: "digital";
+  font-size: 72px;
+}
+
+/* timerの画像 */
+
+.timer-option {
+  margin-top: 5vh;
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.timer-option img {
+  width: 15vh;
+  height: 15vh;
+}

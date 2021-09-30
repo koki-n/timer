@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="app">
+
+		<!-- 背景の動画 -->
+
+
+		<video id="backVideoSrc" loop>
+			<source src="./video/Fire.mp4" type="video/mp4">
+		</video>
+		<audio id="song" src="./sound/bonfire.mp3">
+			<source src="./sound/bonfire.mp3" />
+		</audio>
+		<!--  -->
+
+
+		<div class="container">
+			<!-- 画面左側 -->
+			<div class="time-select">
+				<button data-time="300">5minutes</button>
+				<button data-time="600">10minutes</button>
+				<button data-time="1500">Pomodoro</button>
+			</div>
+
+			<!-- 画面右側 -->
+			<div class="player-select">
+				<div class="player-select__top">
+					<img id="playerSelectIcon" src="./img/fireball.png" alt="">
+					<img id="playerSelectVideo" src="./img/change.png" alt="">
+				</div>
+
+
+				<div class="player-select__circle">
+					<img id="playerSelectCircleImg" src="./img/deskwork.png" alt="">
+					<div class="player-select__circle__svg">
+						<svg viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle id="playerSelectCircleSvgCircle" cx="226.5" cy="226.5" r="216.5" stroke="white"
+								stroke-width="20" />
+						</svg>
+
+					</div>
+				</div>
+				<div class="player-select__timer">
+					<p id="playerSelectTimerMin">00:</p>
+					<p id="playerSelectTimerSec">00</p>
+				</div>
+				<div class="timer-option ">
+					<img id="timerOptionPlay" src="./img/play.png" alt="">
+					<img id="timerOptionPause" src="./img/pause.png" alt="">
+					<img id="timerOptionReplay" src="./img/replay.png" alt="">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
